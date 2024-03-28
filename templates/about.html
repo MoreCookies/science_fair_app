@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skinter</title>
+    <link rel = "stylesheet" href="{{url_for('static', filename='about_style.css')}}">
+</head>
+<body>
+    
+    <div class="banner"> 
+        <div class="bannercontent">
+            <div class="bannertext">
+                <strong>Note:</strong> This application is not a certified medical software, and you should visit you doctor for any medical concerns!
+            </div>
+            <button class="bannerconfirm" type="button"> <span class="material-icons"><strong>I Got It!</strong></span></button>
+            
+        </div>
+    </div>
+
+    <div class="body-div">
+        <div>
+            <h1>Skinter: A Skin Lesion Classification App</h1>
+            <button class = "homebutton"><a href="/" style="text-decoration: none;"><strong>Home</strong></a></button>
+            <h4>About this app:</h4>
+                <p class="description">Created by 2 dedicated highschool students, Skinter is an application built to give <strong>unofficial</strong> diagnoses to individuals who seek quick assurance before visiting a doctor. It identifies a variety of possible skin lesions:</p>
+                <img src="{{url_for('static', filename='skinset1.jpg')}}">
+                <ul>
+                    <li><strong>Melanoma</strong> (mel)</li>
+                    <li><strong>Melanocytic nevus</strong> (nv)</li>
+                    <li><strong>Basal cell carcinoma</strong> (bcc)</li>
+                    <li><strong>Actinic keratosis / Bowen’s disease</strong> (intraepithelial carcinoma) (akiec)</li>
+                    <li><strong>Benign keratosis </strong> (solar lentigo / seborrheic keratosis / lichen planus-like keratosis) (bkl)</li>
+                    <li><strong>Dermatofibroma</strong> (df)</li>
+                    <li><strong>Vascular lesion</strong> (vasc)</li>
+
+                </ul>
+                <p class="warning">* This is not a replacement for your doctor, and you must visit a certified doctor/nurse for a thorough and complete diagnoses!</p>
+            <br>
+            <h4>Authors:</h4>
+                <ul>
+                    <li>Derek Lai</li>
+                    <li>Arnav Gupta</li>
+                </ul>
+            <hr>
+    
+        </div>
+    </div>
+</body>
+
+</html>
